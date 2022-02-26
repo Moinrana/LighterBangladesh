@@ -1,0 +1,13 @@
+.login-main-div mat-card {
+    padding: 0px;
+}
+
+.login-form {
+    padding: 20px;
+}
+
+.login-link-fp {
+    padding: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
