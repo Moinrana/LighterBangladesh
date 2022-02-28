@@ -12,7 +12,9 @@ import { MatCardModule } from '@angular/material/card';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
+
 import { RegistrationComponent } from './registration/registration.component';
+import { DashboardModule } from './modules/dashboard/dashboard.module';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ import { RegistrationComponent } from './registration/registration.component';
     RegistrationComponent
   ],
   imports: [
-    BrowserModule
+    DashboardModule
+    , BrowserModule
     , BrowserAnimationsModule
     , AppRoutingModule
     , MatCardModule
