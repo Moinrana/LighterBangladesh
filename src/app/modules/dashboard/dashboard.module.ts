@@ -11,6 +11,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatDividerModule } from '@angular/material/divider';
 
 import { FlexLayoutModule } from "@angular/flex-layout";
 
@@ -30,6 +31,7 @@ import { FlexLayoutModule } from "@angular/flex-layout";
     , MatInputModule
     , MatFormFieldModule
     , MatSidenavModule
+    , MatDividerModule
   ]
 })
 export class DashboardModule { }
