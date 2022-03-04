@@ -2,6 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DashboardComponent } from '../../dashboard/dashboard.component';
 import { HomeComponent } from '../../home/home.component';
+import { AccountComponent } from '../../components/admin/account/account.component';
+import { MembersComponent } from '../../components/admin/members/members.component';
+
 import { RouterModule } from '@angular/router';
 import { SharedModule } from 'src/app/shared/modules/shared/shared.module';
 
@@ -18,7 +21,9 @@ import { FlexLayoutModule } from "@angular/flex-layout";
 @NgModule({
   declarations: [
     DashboardComponent,
-    HomeComponent
+    HomeComponent,
+    AccountComponent,
+    MembersComponent
   ],
   imports: [
     CommonModule

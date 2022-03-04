@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from '../../components/header/header.component';
 import { FooterComponent } from '../../components/footer/footer.component';
 import { SidebarComponent } from '../../components/sidebar/sidebar.component';
+import { CardComponent } from '../../widgets/card/card.component';
 
 import { MatDividerModule } from '@angular/material/divider';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -12,12 +13,15 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatListModule } from '@angular/material/list'
 
 import { FlexLayoutModule } from "@angular/flex-layout";
+import { RouterModule } from '@angular/router';
+
 
 @NgModule({
   declarations: [
     HeaderComponent,
     FooterComponent,
-    SidebarComponent
+    SidebarComponent,
+    CardComponent
   ],
   imports: [
     CommonModule
@@ -28,12 +32,14 @@ import { FlexLayoutModule } from "@angular/flex-layout";
     , FlexLayoutModule
     , MatMenuModule
     , MatListModule
+    , RouterModule
   ]
   ,
   exports: [
     HeaderComponent,
     FooterComponent,
-    SidebarComponent
+    SidebarComponent,
+    CardComponent
   ]
 })
 export class SharedModule { }
