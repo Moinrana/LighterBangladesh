@@ -1,12 +1,13 @@
 <div fxLayoutAlign="center center" fxFlexFill class="login-main-div">
     <mat-card fxFlex="25">
         <mat-toolbar color="primary">Login</mat-toolbar>
-        <form fxLayoutAlign="stretch" fxLayout="column" class="login-form">
+        <form [formGroup]="loginForm" fxLayoutAlign="stretch" fxLayout="column" class="login-form">
+            {{loginForm.value | json}}
             <mat-form-field>
-                <input matInput placeholder="Username">
+                <input matInput placeholder="Username" formControlName="username">
             </mat-form-field>
             <mat-form-field>
-                <input matInput placeholder="Password">
+                <input type="password" matInput placeholder="Password" formControlName="password">
             </mat-form-field>
             <button mat-raised-button color="primary" type="submit">Login</button>
             <div fxLayoutAlign="start stretch">

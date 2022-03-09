@@ -16,6 +16,9 @@ import { MatInputModule } from '@angular/material/input';
 import { RegistrationComponent } from './registration/registration.component';
 import { DashboardModule } from './modules/dashboard/dashboard.module';
 
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,6 +36,9 @@ import { DashboardModule } from './modules/dashboard/dashboard.module';
     , FlexLayoutModule
     , MatInputModule
     , MatFormFieldModule
+    , FormsModule
+    , ReactiveFormsModule
+    , CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
