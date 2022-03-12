@@ -5,11 +5,17 @@
             {{loginForm.value | json}}
             <mat-form-field>
                 <input matInput placeholder="Username" formControlName="username">
+                <mat-error *ngIf="username?.invalid && username?.touched">
+                    Your username doesn't look right
+                </mat-error>
             </mat-form-field>
             <mat-form-field>
                 <input type="password" matInput placeholder="Password" formControlName="password">
+                <mat-error *ngIf="password?.invalid && password?.touched">
+                    Your password must be minimum eight characters of lenght, at least one letter, one number and one special character
+                </mat-error>
             </mat-form-field>
-            <button mat-raised-button color="primary" type="submit">Login</button>
+            <button mat-raised-button [disabled]="this.loginForm.invalid" color="primary" type="submit">Login</button>
             <div fxLayoutAlign="start stretch">
                 <span class="login-link-fp" color="blue">Forget password ?</span>
                 <span class="login-link-fp" color="blue">Sign up</span>
