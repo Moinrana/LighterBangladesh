@@ -36,9 +36,34 @@
         </div>
 
     </div> -->
-    <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px" class="stats-cards">
-        <mat-card fxFlex="25">Members</mat-card>
-        <mat-card fxFlex="25">Account</mat-card>
+    <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px" class="stats-cards" (click)="cardClicked('Members')">
+        <!-- members card -->
+        <mat-card fxFlex="25">
+            <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="5px">
+                <div fxFlex="70">
+                    Members
+                </div>
+                <div fxFlex="30" fxLayoutAlign="end">
+                    125
+                </div>
+            </div>
+
+        </mat-card>
+
+
+        <!-- account card -->
+        <mat-card fxFlex="25">
+
+            <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="5px">
+                <div fxFlex="20">
+                    Account
+                </div>
+                <div fxFlex="80" fxLayoutAlign="end">
+                    25000 BDT
+                </div>
+            </div>
+
+        </mat-card>
         <mat-card fxFlex="25">Stats1</mat-card>
         <mat-card fxFlex="25">Stats2</mat-card>
     </div>

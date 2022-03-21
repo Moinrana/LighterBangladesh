@@ -17,6 +17,9 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatDividerModule } from '@angular/material/divider';
 
 import { FlexLayoutModule } from "@angular/flex-layout";
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { AgGridModule } from 'ag-grid-angular';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,8 @@ import { FlexLayoutModule } from "@angular/flex-layout";
     MembersComponent
   ],
   imports: [
-    CommonModule
+    FormsModule
+    , CommonModule
     , RouterModule
     , SharedModule
     , MatCardModule
@@ -37,6 +41,8 @@ import { FlexLayoutModule } from "@angular/flex-layout";
     , MatFormFieldModule
     , MatSidenavModule
     , MatDividerModule
-  ]
+    , HttpClientModule
+  ],
+  providers: [],
 })
 export class DashboardModule { }
